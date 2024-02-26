@@ -14,13 +14,13 @@ export default function App() {
         defaultValue="Name me!"
         />
     </View>
-  );
+  ); 
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#25292e',
+    backgroundColor: '#efefef',
     alignItems: 'center',
     justifyContent: 'center',
   },
