@@ -1,27 +1,22 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, TextInput, View } from 'react-native';
+import React from "react";
+import { ScrollView } from "react-native";
+import {StyleSheet, View} from 'react-native';
+import {Text} from "react-native";
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>"Hello!"</Text>
-      <TextInput
-          style={{
-          height: 40,
-          borderColor: 'gray',
-          borderWidth: 1,
-        }}
-        defaultValue="Name me!"
-        />
-    </View>
-  ); 
+
+  const App = () => {
+    return(
+      <View style={{flex:1}}>
+         <View style={{
+          width: '100%',
+          height: 96,
+          backgroundColor: 'skyblue'}} />
+         <View style={{flex: 1, backgroundColor: 'powderblue'}} />
+         <Text> "Hello" </Text> 
+         <View style={{flex: 1, backgroundColor: 'skyblue'}} />
+      </View>
+  );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#efefef',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+
+export default App;
